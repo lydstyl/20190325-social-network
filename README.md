@@ -2,6 +2,4 @@
 
 Learning the MERN STACK (Mongo, Express, React, Node).
 
-Creating a social network for developers : https://whispering-plains-16390.herokuapp.com/
-
-Now on Heroku
+Now on Heroku https://social-network-2019-04.herokuapp.com/
