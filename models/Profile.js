@@ -1,11 +1,11 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 // Create Schema
 const ProfileSchema = new Schema({
   user: {
-    type: Schema.Types.ObjectId, // associated the user by his id // type: mongoose.Types.ObjectId fonctionne aussi
-    ref: "users" // collection users
+    type: Schema.Types.ObjectId,
+    ref: 'users'
   },
   handle: {
     type: String,
@@ -39,18 +39,18 @@ const ProfileSchema = new Schema({
     {
       title: {
         type: String,
-        require: true
+        required: true
       },
       company: {
         type: String,
-        require: true
+        required: true
       },
       location: {
         type: String
       },
       from: {
         type: Date,
-        require: true
+        required: true
       },
       to: {
         type: Date
@@ -68,19 +68,19 @@ const ProfileSchema = new Schema({
     {
       school: {
         type: String,
-        require: true
+        required: true
       },
       degree: {
         type: String,
-        require: true
+        required: true
       },
       fieldofstudy: {
         type: String,
-        require: true
+        required: true
       },
       from: {
         type: Date,
-        require: true
+        required: true
       },
       to: {
         type: Date
@@ -117,4 +117,4 @@ const ProfileSchema = new Schema({
   }
 });
 
-module.exports = Profile = mongoose.model("profile", ProfileSchema);
+module.exports = Profile = mongoose.model('profile', ProfileSchema);

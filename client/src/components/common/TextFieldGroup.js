@@ -1,8 +1,7 @@
-import React from "react";
-import classnames from "classnames";
-import PropTypes from "prop-types";
+import React from 'react';
+import classnames from 'classnames';
+import PropTypes from 'prop-types';
 
-// composent fonctionnel on passe ses props dans les params de la fonction
 const TextFieldGroup = ({
   name,
   placeholder,
@@ -18,8 +17,8 @@ const TextFieldGroup = ({
     <div className="form-group">
       <input
         type={type}
-        className={classnames("form-control form-control-lg", {
-          "is-invalid": { error }
+        className={classnames('form-control form-control-lg', {
+          'is-invalid': error
         })}
         placeholder={placeholder}
         name={name}
@@ -45,7 +44,7 @@ TextFieldGroup.propTypes = {
 };
 
 TextFieldGroup.defaultProps = {
-  type: "text"
+  type: 'text'
 };
 
 export default TextFieldGroup;
